@@ -12,6 +12,7 @@ $(function(){
     slidesToShow: 4,
     slidesToScroll: 4,
     asNavFor: '.header__slider',
+    
   });
 
   $('.surf-slider').slick({
@@ -80,6 +81,10 @@ $(function(){
 
   $('.surfboard-box__circle').on('click', function(){
     $(this).toggleClass('active')
+  });
+
+  $('.menu-btn').on('click', function(){
+    $('.menu').toggleClass('active');
   });
 
 });
